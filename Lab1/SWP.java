@@ -41,7 +41,7 @@ public class SWP {
    private void init(){
       for (int i = 0; i < NR_BUFS; i++){
 	     out_buf[i] = new Packet();
-      }
+      }//dddd
    }
 
    private void wait_for_event(PEvent e){
