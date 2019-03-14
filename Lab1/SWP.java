@@ -242,7 +242,8 @@ public class SWP {
          		public void run(){
             		swe.generate_acktimeout_event();
          		}
-      		}, 20);
+      		}, 20); /*ack timer duration is shorter than retransmission timer. 
+                    It is to ensure retransmission is not caused by no piggybacking*/
    }
 
    private void stop_ack_timer() {
